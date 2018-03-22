@@ -1,3 +1,5 @@
+说明：
+1.测试完成时间2018.3.22(中文注释处为本次上机测试内容，均可用)
 Python language bindings for ev3dev
 ===================================
 
@@ -16,7 +18,8 @@ before you can use this library.
 
 Getting Started
 ---------------
-
+开始之前
+使用putty软件登录到安装有ev3dev软件的ev3控制器中
 This library runs on ev3dev_. Before continuing, make sure that you have set up
 your EV3 or other ev3dev device as explained in the `ev3dev Getting Started guide`_.
 Make sure that you have a kernel version that includes ``-10-ev3dev`` or higher (a
@@ -43,6 +46,7 @@ To run these minimal examples, run the Python3 interpreter from
 the terminal using the ``python3`` command:
 
 .. code-block:: bash
+命令行启动python3
 
   $ python3
   Python 3.4.2 (default, Oct  8 2014, 14:47:30)
@@ -61,8 +65,8 @@ If you are using an EV3 brick (which is the case for most users), add the
 following to the top of your file:
 
 .. code-block:: python
-
-  import ev3dev.ev3 as ev3
+导入库，使用ev3别名
+  import ev3dev.ev3 as ev3
 
 If you are using a BrickPi, use this line:
 
@@ -86,7 +90,7 @@ the loop and start the program.  Hit ``Ctrl-C`` to exit the loop.
 
 Running a motor
 ~~~~~~~~~~~~~~~
-
+启动电机
 Now plug a motor into the ``A`` port and paste this code into the Python prompt.
 This little program will run the motor at 500 ticks per second, which on the EV3
 "large" motors equates to around 1.4 rotations per second, for three seconds
@@ -105,7 +109,7 @@ degress per second.
 
 Using text-to-speech
 ~~~~~~~~~~~~~~~~~~~~
-
+使用文本转语音功能
 If you want to make your robot speak, you can use the `Sound.speak` method:
 
 .. code-block:: python
@@ -181,13 +185,13 @@ Demo Code
 
 Upgrading this Library
 ----------------------
-
+更新库
 You can upgrade this library from the command line as follows. Make sure
 to type the password (the default is ``maker``) when prompted.
 
 .. code-block:: bash
-
-   sudo apt-get update
+使用以下命令
+   sudo apt-get update
    sudo apt-get install --only-upgrade python3-ev3dev
 
 
